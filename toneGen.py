@@ -1,5 +1,5 @@
 '''
-Script for creating optophonic sounds. Part of the Optophone Kit 
+Script for creating and saving optophonic sounds for playback with optoscript.py. Part of the Optophone Kit 
 and the Kits for Cultural History series by the MLab at the 
 University of Victoria (maker.uvic.ca).
 
