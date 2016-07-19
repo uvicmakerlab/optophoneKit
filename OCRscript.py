@@ -14,10 +14,19 @@ Link to the Optophone Kit repository: github.com/uvicmakerlab/optophoneKit
 import cv2
 from PIL import Image
 from pytesser import *
+from picamera.array import PiRGBArray
+from picamera import PiCamera
+import time
 
 #Save image from webcam
-img = cv2.VideoCapture(0).read()[1]
-cv2.imwrite(IMAGE_FILE, img)
+camera = PiCamera()
+rawCapture = PiRGBArray(camera)
+#allow the camera to warm up
+time.sleep(0.1)
+#grab an image from the camera
+camera.capture(rawCapture, format="bgr")
+image = rawCapture.array
+cv2.imwrite("test.jpg", image)
 
 '''
 To make the image easier for Tesseract to read, convert the image to
@@ -27,7 +36,6 @@ increasing the contrast between text and background.
 To read an arbitrary image (rather than one taken with the PiCamera),
 you can change the file name below ("imagetoOCR.jpg") to the file
 name and/or extension that you want to use.
-
 '''
 
 #Convert image to grayscale
