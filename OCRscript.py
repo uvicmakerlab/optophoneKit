@@ -15,15 +15,23 @@ import cv2
 from PIL import Image
 from pytesser import *
 
+#Save image from webcam
+img = cv2.VideoCapture(0).read()[1]
+cv2.imwrite(IMAGE_FILE, img)
+
 '''
 To make the image easier for Tesseract to read, convert the image to
 grayscale and then use threshold to make the image black and white,
 increasing the contrast between text and background.
 
+To read an arbitrary image (rather than one taken with the PiCamera),
+you can change the file name below ("imagetoOCR.jpg") to the file
+name and/or extension that you want to use.
+
 '''
 
 #Convert image to grayscale
-img = cv2.imread("imagetoOCR.jpg")
+img = cv2.imread("imagetoOCR.jpg") #change file name to match image
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imwrite("grayscale.jpg", gray)
 
