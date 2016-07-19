@@ -19,7 +19,7 @@ These instructions detail the workflow and steps for converting an image into pl
 2. [toneGen.py](toneGen.py) - creates and saves optophonic sounds for later playback.
 3. [optoscript.py](optoscript.py) - takes a string of characters as its input and plays the corresponding sounds.
 
-### <a name="depends"></a>Dependencies
+#### <a name="depends"></a>Dependencies
 To run these scripts, you will need to download and install Python. See the [Python website](https://www.python.org/) for instructions on how to do this. Note that the optophone project uses Python version 2.7. The scripts and dependencies should be able to work with Python 3, but there may be slight differences in the dependencies and scripts.
 
 There are also several dependencies (Python modules or packages) that must be installed before the scripts can work. These include:
@@ -33,7 +33,7 @@ There are also several dependencies (Python modules or packages) that must be in
 
 For the optophone project, these were all installed on a Raspberry Pi. Except for OCRscript.py, all the scripts should work on a laptop or personal computer. You can also modify OCRscript.py (see [OCRscript.py](OCRscript.py) for more) to take an arbitrary image as its input instead of an image from a Raspberry Pi camera.
 
-###<a name="workflow"></a>Workflow
+####<a name="workflow"></a>Workflow
 
 1. **Set up everything you need.** Set up all the hardware (the Raspberry Pi, PiCamera) and any other peripherals (e.g. monitor, mouse, keyboard) you might need. Download and install any dependencies. Download all the python scripts.
 
@@ -43,7 +43,7 @@ For the optophone project, these were all installed on a Raspberry Pi. Except fo
 
 4. **Run optoscript.py** to read the results.txt file (make sure results.txt is in the same folder/directory as optoscript.py) and play the associated sounds.
 
-### <a name="notes"></a>Notes on Using the Scripts
+#### <a name="notes"></a>Notes on Using the Scripts
 The current scripts were made for testing small samples of code. To use them to express your own text as tones, you may have to modify it. For example, the dictionary of tones, as it is recorded in optopscript.py, only contains 3 entries for lowercase a,b, and c. You would have to change the dictionary to include the tones for other characters before you could play them.
 
 Other places where code may be modified are noted in the scripts themselves.
