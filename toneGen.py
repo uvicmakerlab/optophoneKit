@@ -37,8 +37,7 @@ of the line).
 Replace the first list with the desired frequencies, the second 
 with the amplitude, and the third number with the length (in ms).
 
-For more on how the schema works, see 
-http://maker.uvic.ca/schema/ and scanningType.gif (in the repo).
+For more on how the schema works, see http://maker.uvic.ca/schema/
 '''
 
 #synthComplex([784, 740, 659, 587, 523], [1, 1, 1, 1, 1], 2500)
