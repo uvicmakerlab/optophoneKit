@@ -12,7 +12,7 @@ These files are part of research conducted by Tiffany Chan, Katherine Goertz, Da
 * [Change Log](#changeLog)
 * [License](#license)
 
-## <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Instructions
 These instructions detail the workflow and steps for converting an image into plaintext and then into a stream of optophonic sounds. Currently, the repo contains 3 scripts, written in the Python programming language. As the Kit develops, some of the scripts may change or be combined together (see the [change log](#changelog)).
 
 1. [OCRscript.py](OCRscript.py) - takes an image from the PiCamera, runs it through OCR (Optical Character Recognition)
