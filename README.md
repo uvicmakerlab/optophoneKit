@@ -37,7 +37,7 @@ For the optophone project, these were all installed on a Raspberry Pi. Except fo
 
 1. **Set up everything you need.** Set up all the hardware (the Raspberry Pi, PiCamera) and any other peripherals (e.g. monitor, mouse, keyboard) you might need. Download and install any dependencies. Download all the python scripts.
 
-2. **Create and save tones for the optophone to play.** Download the sound files in the tones folder to use them for playback or modify [optoscript.py](optoscript.py) to generate your own tones. To make things easier, you can keep the tones in the same directory (folder) as your scripts. Otherwise, make sure the script can find the correct file path to your sound files.
+2. **Create and save tones for the optophone to play.** Download the sound files in the tones folder to use them for playback or modify and run [toneGen.py](toneGen.py) to generate your own tones (note you will probably have to change the dictionary in optoscript.py to match). To make things easier, you can keep the tones in the same directory (folder) as your scripts. Otherwise, make sure the script can find the correct file path to your sound files.
 
 3. **Take a picture of the print material and turn it into plaintext.** Position the camera to take a picture of the text. Ideally, you will want an image with bright lighting and where the text will take up as much of the image as possible (i.e. little to no background). This will make the image easier for the computer to read. [OCRscript.py](OCRscript.py) and Tesseract (the OCR program) will optimize the image as best as they can as well. Modify OCRscript.py as necessary (see [Notes](#notes) below) and run it. OCRscript.py will conver the image into a plaintext file named results.txt.
 
