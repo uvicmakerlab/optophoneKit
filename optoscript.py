@@ -14,23 +14,29 @@ sound file generated with toneGen.py, then plays them with PyGame.
 import sys
 import pygame as pg #PyGame
 
-#Create a dictionary of characters, each keyed to its tone
+'''Create a dictionary of characters, each keyed to its tone. You can
+modify the dictionary below to include your own files as long as you 
+keep the correct syntax for Python. If the dictionary becomes too long,
+you might want to keep it in a separate file and import it.
+
+See http://www.tutorialspoint.com/python/python_dictionary.htm for more.
+'''
 tone_dict = {'a' : 'a-lo.wav', 'b' : 'b-lo.wav', 'c' : 'c-lo.wav', ' ' : 'tone.wav'}
 #Create an empty list to fill and pass to PyGame
 tones = []
 
 #Split each string into characters, create a list of characters
-s = "abc bcaff bbac eedaaabck  " #arbitrary string for testing
+s = open('results.txt', 'r').read()
 characters = list(s)
 
 #For each character (item in the list), check it against the dictionary
-#and append the corresponding tone to a list
+#and append the corresponding tone to a separate list
 for i in range(len(characters)):
 	char = characters[i]
 	if char in tone_dict:
 		tones.append(tone_dict[str(char)])
 
-#Pass the list to PyGame. Play the list.
+#Pass the list of tones to PyGame. Play the list.
 TRACK_END = pg.USEREVENT+1
 track = 0
 
