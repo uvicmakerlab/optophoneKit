@@ -1,6 +1,8 @@
 # Optophone Kit
 
-Repository for the Optophone Kit, part of the Maker Lab's [Kits for Cultural History series](http://maker.uvic.ca/kch/). The optophone was a reading aid for the blind that converted text to sound in the 20th century, beginning in the 1910s and extending until at least the 1960s. To read more about the process of remaking the optophone, see our [blog posts](http://maker.uvic.ca/?s=optophone&search=) at [maker.uvic.ca](http://maker.uvic.ca/).
+![](optoGuy.jpg "optophone")
+
+This is a repository for the Optophone Kit, part of the Maker Lab's [Kits for Cultural History series](http://maker.uvic.ca/kch/). The optophone was a reading aid for the blind that converted text to sound in the 20th century, beginning in the 1910s and extending until at least the 1960s. To read more about the process of remaking the optophone, see our [blog posts](http://maker.uvic.ca/?s=optophone&search=) at [maker.uvic.ca](http://maker.uvic.ca/).
 
 These files are part of research conducted by Tiffany Chan, Katherine Goertz, Danielle Morgan, Victoria Murawski, and Jentery Sayers. Thanks to Robert Baker (Blind Veterans UK), Mara Mills (New York University), and Matthew Rubery (Queen Mary University of London) for their support and feedback.
 
