@@ -19,8 +19,8 @@ amp = 8000.0
 sine_list = []
 datasize = 0
 
-#Define function for combining sounds, synthesizing into one chord
-#freq = pitch, coef = amplitude, datasize = length, fname = name of wav file
+#Define function for combining sounds, synthesizing them into one chord
+#freq = pitch, coef = amplitude, datalength = length, fname = name of wav file
 def synthComplex(freq=[], coef=[], datalength=10000):
     #returns a tone for each number in datasize and appends it to a list
     for x in range(datalength):
@@ -29,7 +29,18 @@ def synthComplex(freq=[], coef=[], datalength=10000):
             samp = samp + coef[k] * math.sin(2*math.pi*freq[k]*(x/frate)) #the equation for creating a pure sine wav
         sine_list.append(samp)
 
-#Synthesize the sounds
+'''
+Synthesize the sounds by filling in the synthComplex functions
+below and "uncommenting them" (deleting the hashtag at the start
+of the line).
+
+Replace the first list with the desired frequencies, the second 
+with the amplitude, and the third number with the length (in ms).
+
+For more on how the schema works, see 
+http://maker.uvic.ca/schema/ and scanningType.gif (in the repo).
+'''
+
 #synthComplex([784, 740, 659, 587, 523], [1, 1, 1, 1, 1], 2500)
 #synthComplex([], [], 2500)
 
