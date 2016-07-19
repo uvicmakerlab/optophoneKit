@@ -21,7 +21,7 @@ you might want to keep it in a separate file and import it.
 
 See http://www.tutorialspoint.com/python/python_dictionary.htm for more.
 '''
-tone_dict = {'a' : 'a-lo.wav', 'b' : 'b-lo.wav', 'c' : 'c-lo.wav', ' ' : 'tone.wav'}
+tone_dict = {'a' : 'a-lo.wav', 'b' : 'b-lo.wav', 'c' : 'c-lo.wav'}
 #Create an empty list to fill and pass to PyGame
 tones = []
 
