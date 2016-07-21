@@ -21,6 +21,12 @@ you might want to keep it in a separate file and import it.
 
 See http://www.tutorialspoint.com/python/python_dictionary.htm for more.
 '''
+
+'''The following line is the dictionary of tones. Inside the ''s before 
+the :, type the character that the optophone detects (e.g. x). Inside 
+the second pair of ''s, type the associated file to play when the 
+computer reads that character (e.g. x-lo.wav).'''
+
 tone_dict = {'a' : 'a-lo.wav', 'b' : 'b-lo.wav', 'c' : 'c-lo.wav'}
 #Create an empty list to fill and pass to PyGame
 tones = []
