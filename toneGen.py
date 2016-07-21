@@ -34,8 +34,9 @@ Synthesize the sounds by filling in the synthComplex functions
 below and "uncommenting them" (deleting the hashtag at the start
 of the line).
 
-Replace the first list with the desired frequencies, the second 
-with the amplitude, and the third number with the length (in ms).
+Inside synthComplex(), replace the first [] with the desired 
+frequencies, the second [] with the amplitude, and the last no.
+with the length in milliseconds.
 
 For more on how the schema works, see http://maker.uvic.ca/schema/
 '''
@@ -45,7 +46,7 @@ For more on how the schema works, see http://maker.uvic.ca/schema/
 
 #Write the sounds into a single .wav file
 def synthMelody():
-    wav_file=wave.open("name.wav","w")
+    wav_file=wave.open("name.wav","w") #replace name.wav with your own file name
     nchannels = 1
     sampwidth = 2
     framerate = int(frate)
