@@ -35,7 +35,8 @@ increasing the contrast between text and background.
 
 To read an arbitrary image (rather than one taken with the PiCamera),
 you can change the file name below ("imagetoOCR.jpg") to the file
-name and/or extension that you want to use.
+name and/or extension that you want to use and delete the code above
+that involves PiCamera.
 '''
 
 #Convert image to grayscale
