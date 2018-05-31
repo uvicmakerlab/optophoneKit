@@ -35,7 +35,7 @@ There are also several dependencies (Python modules or packages) that must be in
 
 For the optophone project, these were all installed on a Raspberry Pi. Except for OCRscript.py, all the scripts should work on a laptop or personal computer. You can also modify OCRscript.py (see [OCRscript.py](OCRscript.py) for more) to take an arbitrary image as its input instead of an image from a Raspberry Pi camera.
 
-###<a name="workflow"></a>Workflow
+### <a name="workflow"></a>Workflow
 
 1. **Set up everything you need.** Set up all the hardware (the Raspberry Pi, PiCamera) and any other peripherals (e.g. monitor, mouse, keyboard) you might need. Download and install any dependencies. Download all the python scripts.
 
