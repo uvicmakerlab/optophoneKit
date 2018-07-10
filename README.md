@@ -1,4 +1,4 @@
-# Optophone Kit
+# Reading Optophone Kit
 
 ![](optoGuy.jpg "optophone")
 
