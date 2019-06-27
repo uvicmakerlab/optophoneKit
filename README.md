@@ -41,12 +41,12 @@ For the optophone project, these were all installed on a Raspberry Pi. Except fo
 
 2. **Create and save tones for the optophone to play.** Currently, [optoscript.py](optoscript.py) only plays the tones for lowercase a,b, and c. You can download the sound files in the tones folder to use them for playback or modify and run [toneGen.py](toneGen.py) to generate different tones (note you will probably have to change the dictionary in optoscript.py to match). To make things easier, you can keep the tones in the same directory (folder) as your scripts. Otherwise, make sure the script can find the correct file path to your sound files.
 
-3. **Take a picture of the print material and turn it into plaintext.** Position the camera to take a picture of the text. Ideally, you will want an image with bright lighting and where the text will take up as much of the image as possible (i.e. little to no background). This will make the image easier for the computer to read. [OCRscript.py](OCRscript.py) and Tesseract (the OCR program) will optimize the image as best as they can as well. Modify OCRscript.py as necessary (see [Notes](#notes) below) and run it. OCRscript.py will conver the image into a plaintext file named results.txt.
+3. **Take a picture of the print material and turn it into plaintext.** Position the camera to take a picture of the text. Ideally, you will want an image with bright lighting and where the text will take up as much of the image as possible (i.e. little to no background). This will make the image easier for the computer to read. [OCRscript.py](OCRscript.py) and Tesseract (the OCR program) will optimize the image as best as they can as well. Modify OCRscript.py as necessary (see [Notes](#notes) below) and run it. OCRscript.py will convert the image into a plaintext file named results.txt.
 
 4. **Run optoscript.py** to read the results.txt file (make sure results.txt is in the same folder/directory as optoscript.py) and play the associated sounds.
 
 ### <a name="notes"></a>Notes on Using the Scripts
-The current scripts were made for testing small samples of code. To use them to express your own text as tones, you may have to modify it. For example, the dictionary of tones, as it is recorded in optopscript.py, only contains 3 entries for lowercase a,b, and c. You would have to change the dictionary to include the tones for other characters before you could play them.
+The current scripts were made for testing small samples of code. To use them to express your own text as tones, you may have to modify it. For example, the dictionary of tones, as it is recorded in optopscript.py, only contains 3 entries for lowercase a, b, and c. You would have to change the dictionary to include the tones for other characters before you could play them.
 
 Other places where code may be modified are noted in the scripts themselves.
 
